@@ -1,6 +1,6 @@
 export function Footer() {
     return (
-        <footer className="border-t border-border bg-secondary">
+        <footer className="col-start-2 col-end-3 border-t border-border bg-secondary">
             <div className="container mx-auto px-4 py-12 md:px-6">
                 <div className="grid gap-8 md:grid-cols-3">
                     {/* Contacts */}
@@ -11,18 +11,18 @@ export function Footer() {
                         <div className="space-y-2 text-sm text-muted-foreground">
                             <p>
                                 <a
-                                    href="mailto:mkturomsk@gmail.com"
+                                    href="mailto:post@minprom.omskportal.ru"
                                     className="hover:text-primary"
                                 >
-                                    mkturomsk@gmail.com
+                                    post@minprom.omskportal.ru
                                 </a>
                             </p>
                             <p>
                                 <a
-                                    href="tel:+79131499889"
+                                    href="tel:77-04-17"
                                     className="hover:text-primary"
                                 >
-                                    8-913-149-98-89
+                                    77-04-17
                                 </a>
                             </p>
                         </div>
@@ -41,13 +41,6 @@ export function Footer() {
                             >
                                 VK
                             </a>
-                            <a
-                                href="#"
-                                className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground transition-colors hover:bg-primary/90"
-                                aria-label="Telegram"
-                            >
-                                TG
-                            </a>
                         </div>
                     </div>
 
@@ -56,8 +49,37 @@ export function Footer() {
                         <h3 className="mb-4 text-lg font-bold text-foreground">
                             Партнёры
                         </h3>
-                        <p className="text-sm text-muted-foreground">
-                            Министерство промышленности и торговли РФ
+                        <p className="text-sm flex flex-col text-muted-foreground">
+                            <a
+                                href="https://omsktec.ru"
+                                className="hover:text-primary"
+                            >
+                                Колледж инновационных технологий и коммерции
+                            </a>
+                            <a
+                                href="https://omsktec.ru"
+                                className="hover:text-primary"
+                            >
+                                ООО "НПО "МИР"
+                            </a>
+                            <a
+                                href="https://omsktec.ru"
+                                className="hover:text-primary"
+                            >
+                                Х5 Group
+                            </a>
+                            <a
+                                href="https://omsktec.ru"
+                                className="hover:text-primary"
+                            >
+                                Ассоциация омских кулинаров
+                            </a>
+                            <a
+                                href="https://omsktec.ru"
+                                className="hover:text-primary"
+                            >
+                                Альфа-бизнес (ТД "Шкуренко")
+                            </a>
                         </p>
                     </div>
                 </div>

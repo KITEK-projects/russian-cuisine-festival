@@ -9,7 +9,7 @@ export function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <header className="col-start-1 col-end-4 sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-3">
@@ -45,12 +45,12 @@ export function Header() {
                         href="/festival"
                         className="text-base font-medium text-foreground transition-colors hover:text-primary"
                     >
-                        Фестиваль
+                        Месяц русской кухни
                     </Link>
                 </nav>
 
                 {/* CTA Button */}
-                <div className="hidden md:block">
+                {/* <div className="hidden md:block">
                     <Button
                         asChild
                         size="lg"
@@ -58,7 +58,7 @@ export function Header() {
                     >
                         <Link href="/#about">Подробнее</Link>
                     </Button>
-                </div>
+                </div> */}
 
                 {/* Mobile Menu Button */}
                 <button
@@ -97,9 +97,9 @@ export function Header() {
                             className="text-base font-medium text-foreground transition-colors hover:text-primary"
                             onClick={() => setMobileMenuOpen(false)}
                         >
-                            Фестиваль
+                            Месяц русской кухни
                         </Link>
-                        <Button
+                        {/* <Button
                             asChild
                             size="lg"
                             className="mt-2 bg-primary text-primary-foreground"
@@ -110,7 +110,7 @@ export function Header() {
                             >
                                 Подробнее
                             </Link>
-                        </Button>
+                        </Button> */}
                     </nav>
                 </div>
             )}

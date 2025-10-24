@@ -270,64 +270,6 @@ export default function FestivalPage() {
                 </section>
 
                 {/* Documents Section */}
-                <section className="py-16 md:py-24">
-                    <div className="container mx-auto px-4 md:px-6">
-                        <div className="mx-auto max-w-4xl">
-                            <div className="mb-12 text-center">
-                                <h2 className="text-balance text-3xl font-bold text-foreground md:text-4xl">
-                                    Документы
-                                </h2>
-                                <p className="mt-4 text-lg text-muted-foreground">
-                                    Методические материалы и положения фестиваля
-                                </p>
-                            </div>
-
-                            <div className="grid gap-6 md:grid-cols-2">
-                                <Card className="border-2 border-border bg-card">
-                                    <CardHeader>
-                                        <h3 className="text-xl font-bold text-foreground">
-                                            Методические рекомендации
-                                        </h3>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <p className="mb-4 leading-relaxed text-muted-foreground">
-                                            Подробное описание целей, задач,
-                                            традиционных блюд и рекомендации по
-                                            проведению мероприятий
-                                        </p>
-                                        <Button
-                                            variant="outline"
-                                            className="w-full bg-transparent"
-                                        >
-                                            Скачать PDF
-                                        </Button>
-                                    </CardContent>
-                                </Card>
-
-                                <Card className="border-2 border-border bg-card">
-                                    <CardHeader>
-                                        <h3 className="text-xl font-bold text-foreground">
-                                            Техническое задание
-                                        </h3>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <p className="mb-4 leading-relaxed text-muted-foreground">
-                                            Требования к участникам, форма
-                                            регистрации и технические условия
-                                            проведения фестиваля
-                                        </p>
-                                        <Button
-                                            variant="outline"
-                                            className="w-full bg-transparent"
-                                        >
-                                            Скачать DOCX
-                                        </Button>
-                                    </CardContent>
-                                </Card>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
                 {/* Contact Section */}
                 <section className="border-t border-border bg-primary py-16 text-primary-foreground md:py-24">
@@ -342,19 +284,19 @@ export default function FestivalPage() {
                             <p className="text-lg">
                                 Email:{" "}
                                 <a
-                                    href="mailto:mkturomsk@gmail.com"
+                                    href="mailto:post@minprom.omskportal.ru"
                                     className="font-medium underline"
                                 >
-                                    mkturomsk@gmail.com
+                                    post@minprom.omskportal.ru
                                 </a>
                             </p>
                             <p className="text-lg">
                                 Телефон:{" "}
                                 <a
-                                    href="tel:+79131499889"
+                                    href="tel:77-04-17"
                                     className="font-medium underline"
                                 >
-                                    8-913-149-98-89
+                                    77-04-17
                                 </a>
                             </p>
                         </div>

@@ -1,15 +1,23 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { ChefHat, Users, Award, Calendar } from "lucide-react"
 import Link from "next/link"
 
 export default function HomePage() {
     return (
-        <div className="flex min-h-screen flex-col">
+        <div className="flex min-h-screen flex-col relative">
             <Header />
 
+            {/* <div
+                style={{ backgroundImage: "url(/pattern.png)" }}
+                className="left-0 fixed bg-contain z-30 bg-repeat-y w-1/16 h-full hidden 2xl:block"
+            />
+            <div
+                style={{ backgroundImage: "url(/pattern.png)" }}
+                className="right-0 fixed bg-contain z-30 bg-repeat-y w-1/16 h-full hidden 2xl:block"
+            /> */}
             <main className="flex-1">
                 {/* Epigraph Section */}
                 <section className="border-b border-border bg-muted/30 py-8">
@@ -28,17 +36,19 @@ export default function HomePage() {
                 {/* Hero Section */}
                 <section className="relative overflow-hidden bg-gradient-to-br from-background via-secondary/20 to-background py-20 md:py-32">
                     <div className="container mx-auto px-4 md:px-6">
-                        <div className="grid items-center gap-12 lg:grid-cols-2">
+                        <div className="grid items-start gap-12 lg:grid-cols-2">
                             <div className="space-y-8">
-                                <div className="space-y-4">
+                                <div className="gridspace-y-4">
                                     <h1 className="font-serif text-balance text-4xl font-bold leading-tight text-foreground md:text-5xl lg:text-6xl">
-                                        Всероссийский фестиваль{" "}
-                                        <span className="font-accent primary text-destructive">
-                                            русской кухни
+                                        Всероссийский фестиваль
+                                        <br />
+                                        <span className="font-accent primary text-primary">
+                                            русской кухни{" "}
                                         </span>
+                                        <br />В Омской области
                                     </h1>
                                     <p className="font-serif text-pretty text-xl leading-relaxed text-muted-foreground md:text-2xl">
-                                        4 ноября — 1 декабря 2025 г.
+                                        30 октября — 1 декабря 2025 г.
                                     </p>
                                 </div>
 
@@ -67,12 +77,12 @@ export default function HomePage() {
                                 </div>
                             </div>
 
-                            <div className="relative">
-                                <div className="aspect-square overflow-hidden rounded-lg bg-secondary/50">
+                            <div className="relative flex justify-center h-full">
+                                <div className="aspect-square w-3/5 overflow-hidden rounded-lg bg-secondary/50">
                                     <img
                                         src="/traditional-russian-bread-karavai-with-wheat-and-t.jpg"
                                         alt="Традиционный русский каравай"
-                                        className="h-full w-full object-cover"
+                                        className="h-full object-cover"
                                     />
                                 </div>
                                 <div className="absolute -bottom-6 -right-6 h-32 w-32 rounded-full bg-accent/20 blur-3xl" />
@@ -167,7 +177,7 @@ export default function HomePage() {
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="mb-12 text-center">
                             <h2 className="font-serif text-balance text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
-                                Программа мероприятий
+                                Программа мероприятий Омской области
                             </h2>
                             <p className="mt-4 text-lg text-muted-foreground">
                                 Разнообразные события для всех любителей русской
@@ -175,22 +185,24 @@ export default function HomePage() {
                             </p>
                         </div>
 
-                        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                            <Card className="border-2 border-border bg-card">
-                                <CardContent className="pt-6">
-                                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                                        <ChefHat className="h-8 w-8 text-primary" />
-                                    </div>
-                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
-                                        Мастер-классы
-                                    </h3>
-                                    <p className="leading-relaxed text-muted-foreground">
-                                        Обучение традиционным техникам
-                                        приготовления русских блюд от ведущих
-                                        шеф-поваров страны
-                                    </p>
-                                </CardContent>
-                            </Card>
+                        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                                <Card className="border-2 border-border bg-card">
+                                    <CardContent className="pt-6">
+                                        <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                                            <ChefHat className="h-8 w-8 text-primary" />
+                                        </div>
+                                        <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
+                                        <a href="for-restaurators.docx">
+                                        Экскурсия для рестораторов
+                                        </a>
+                                        </h3>
+                                        {/* <p className="leading-relaxed text-muted-foreground">
+                            Обучение традиционным техникам
+                            приготовления русских блюд от ведущих
+                            шеф-поваров страны
+                            </p> */}
+                                    </CardContent>
+                                </Card>
 
                             <Card className="border-2 border-border bg-card">
                                 <CardContent className="pt-6">
@@ -198,12 +210,12 @@ export default function HomePage() {
                                         <Users className="h-8 w-8 text-primary" />
                                     </div>
                                     <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
-                                        Гастро-экскурсии
+                                        Конкурс среди педагогов по компетенции
+                                        "Поварское дело"
                                     </h3>
-                                    <p className="leading-relaxed text-muted-foreground">
-                                        Путешествия по регионам России с
-                                        дегустацией местных традиционных блюд
-                                    </p>
+                                    {/* <p className="leading-relaxed text-muted-foreground">
+                                        ???
+                                    </p> */}
                                 </CardContent>
                             </Card>
 
@@ -213,18 +225,30 @@ export default function HomePage() {
                                         <Award className="h-8 w-8 text-primary" />
                                     </div>
                                     <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
-                                        Конкурсы
+                                        Ярмарка русской кухни
                                     </h3>
-                                    <p className="leading-relaxed text-muted-foreground">
-                                        Соревнования профессиональных поваров и
-                                        любителей в приготовлении традиционных
-                                        блюд
-                                    </p>
+                                    {/* <p className="leading-relaxed text-muted-foreground">
+                                        ???
+                                    </p> */}
+                                </CardContent>
+                            </Card>
+
+                            <Card className="border-2 border-border bg-card">
+                                <CardContent className="pt-6">
+                                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                                        <Award className="h-8 w-8 text-primary" />
+                                    </div>
+                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
+                                        Месяц русской кухни
+                                    </h3>
+                                    {/* <p className="leading-relaxed text-muted-foreground">
+                                        ???
+                                    </p> */}
                                 </CardContent>
                             </Card>
                         </div>
 
-                        <div className="mt-12 text-center">
+                        {/*                         <div className="mt-12 text-center">
                             <Button
                                 asChild
                                 size="lg"
@@ -232,7 +256,7 @@ export default function HomePage() {
                             >
                                 <Link href="/festival">Полная программа</Link>
                             </Button>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
 
@@ -243,9 +267,9 @@ export default function HomePage() {
                             <h2 className="font-serif text-balance text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
                                 Галерея
                             </h2>
-                            <p className="mt-4 text-lg text-muted-foreground">
+                            {/* <p className="mt-4 text-lg text-muted-foreground">
                                 Моменты прошлых фестивалей
-                            </p>
+                            </p> */}
                         </div>
 
                         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -273,7 +297,7 @@ export default function HomePage() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="bg-primary py-20 text-primary-foreground">
+                {/* <section className="bg-primary py-20 text-primary-foreground">
                     <div className="container mx-auto px-4 text-center md:px-6">
                         <h2 className="font-serif text-balance text-3xl font-bold md:text-4xl lg:text-5xl">
                             Присоединяйтесь к фестивалю
@@ -299,6 +323,64 @@ export default function HomePage() {
                             >
                                 <Link href="/news">Новости фестиваля</Link>
                             </Button>
+                        </div>
+                    </div>
+                </section> */}
+                <section className="py-16 md:py-24">
+                    <div className="container mx-auto px-4 md:px-6">
+                        <div className="mx-auto max-w-4xl">
+                            <div className="mb-12 text-center">
+                                <h2 className="text-balance text-3xl font-bold text-foreground md:text-4xl">
+                                    Документы
+                                </h2>
+                                <p className="mt-4 text-lg text-muted-foreground">
+                                    Методические материалы и положения фестиваля
+                                </p>
+                            </div>
+
+                            <div className="grid gap-6 md:grid-cols-2">
+                                <Card className="border-2 border-border bg-card">
+                                    <CardHeader>
+                                        <h3 className="text-xl font-bold text-foreground">
+                                            Методические рекомендации
+                                        </h3>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <p className="mb-4 leading-relaxed text-muted-foreground">
+                                            Подробное описание целей, задач,
+                                            традиционных блюд и рекомендации по
+                                            проведению мероприятий
+                                        </p>
+                                        <Button
+                                            variant="outline"
+                                            className="w-full bg-transparent"
+                                        >
+                                            Скачать PDF
+                                        </Button>
+                                    </CardContent>
+                                </Card>
+
+                                <Card className="border-2 border-border bg-card">
+                                    <CardHeader>
+                                        <h3 className="text-xl font-bold text-foreground">
+                                            Техническое задание
+                                        </h3>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <p className="mb-4 leading-relaxed text-muted-foreground">
+                                            Требования к участникам, форма
+                                            регистрации и технические условия
+                                            проведения фестиваля
+                                        </p>
+                                        <Button
+                                            variant="outline"
+                                            className="w-full bg-transparent"
+                                        >
+                                            Скачать DOCX
+                                        </Button>
+                                    </CardContent>
+                                </Card>
+                            </div>
                         </div>
                     </div>
                 </section>
