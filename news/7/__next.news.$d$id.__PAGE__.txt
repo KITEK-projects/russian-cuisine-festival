@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+3:I[69450,["/russian-cuisine-festival/_next/static/chunks/5d5e03acf2f3037a.js","/russian-cuisine-festival/_next/static/chunks/1e109efa3fe1594f.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"vRnS1J8zsKeCGL4SqU9MR","rsc":["$","$1","c",{"children":["$L2",[["$","script","script-0",{"src":"/russian-cuisine-festival/_next/static/chunks/09673b507ee36bc8.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
+2:E{"digest":"NEXT_HTTP_ERROR_FALLBACK;404"}
