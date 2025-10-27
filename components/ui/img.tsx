@@ -2,8 +2,7 @@ type ImgProps = Omit<React.ImgHTMLAttributes<HTMLImageElement>, "src"> & {
     src: string
 }
 
-const BASE_PATH =
-    process.env.NODE_ENV === "production" ? "/russian-cuisine-festival" : ""
+const BASE_PATH = "/russian-cuisine-festival"
 
 export function Img({ src, alt, ...props }: ImgProps) {
     const fixedSrc = src.startsWith("/")

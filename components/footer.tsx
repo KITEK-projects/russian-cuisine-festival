@@ -54,13 +54,13 @@ export function Footer() {
                                 href="https://omsktec.ru"
                                 className="hover:text-primary"
                             >
-                                Колледж инновационных технологий и коммерции
+                                Колледж инновационных технологий, экономики и коммерции
                             </a>
                             <a
                                 href="https://mir-omsk.ru/"
                                 className="hover:text-primary"
                             >
-                                ООО "НПО "МИР"
+                                ООО НПО «МИР»
                             </a>
                             <a
                                 href="https://www.x5.ru"
@@ -75,7 +75,7 @@ export function Footer() {
                                 href="https://alfa-biz.ru"
                                 className="hover:text-primary"
                             >
-                                Альфа-бизнес (ТД "Шкуренко")
+                                Альфа-Бизнес (ТД «Шкуренко»)
                             </a>
                         </p>
                     </div>

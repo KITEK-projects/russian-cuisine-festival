@@ -12,14 +12,6 @@ export default function HomePage() {
         <div className="flex min-h-screen flex-col relative">
             <Header />
 
-            {/* <div
-                style={{ backgroundImage: "url(/pattern.png)" }}
-                className="left-0 fixed bg-contain z-30 bg-repeat-y w-1/16 h-full hidden 2xl:block"
-            />
-            <div
-                style={{ backgroundImage: "url(/pattern.png)" }}
-                className="right-0 fixed bg-contain z-30 bg-repeat-y w-1/16 h-full hidden 2xl:block"
-            /> */}
             <main className="flex-1">
                 {/* Epigraph Section */}
                 <section className="border-b border-border bg-muted/30 py-8">
@@ -191,14 +183,14 @@ export default function HomePage() {
                         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                             <Card
                                 as="a"
-                                href="for-restaurators.docx"
+                                href="/russian-cuisine-festival/for-restaurators.pdf"
                                 className="border-2 border-border bg-card"
                             >
                                 <CardContent className="pt-6">
                                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                                         <ChefHat className="h-8 w-8 text-primary" />
                                     </div>
-                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
+                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground hover:underline ">
                                         Экскурсия для рестораторов
                                     </h3>
                                     {/* <p className="leading-relaxed text-muted-foreground">
@@ -226,7 +218,7 @@ export default function HomePage() {
 
                             <Card
                                 as="a"
-                                href="/park-omskaya-krepost.docx"
+                                href="/russian-cuisine-festival/park-omskaya-krepost.pdf"
                                 className="border-2 border-border bg-card"
                             >
                                 <CardContent className="pt-6">
@@ -364,7 +356,7 @@ export default function HomePage() {
                                             variant="outline"
                                             className="w-full bg-transparent"
                                         >
-                                            <a href="met-recs.pdf">
+                                            <a href="/russian-cuisine-festival/met-recs.pdf">
                                                 Скачать PDF
                                             </a>
                                         </Button>
@@ -380,15 +372,15 @@ export default function HomePage() {
                                     <CardContent className="flex-grow flex flex-col justify-between">
                                         <p className="mb-4 leading-relaxed text-muted-foreground">
                                             Требования к участникам, форма
-                                            регистрации и технические условия
-                                            проведения фестиваля
+                                            регистрации проведения "Месяца
+                                            русской кухни"
                                         </p>
-                                        <a href="/tehzadanie.docx">
+                                        <a href="/russian-cuisine-festival/tehzadanie.pdf">
                                             <Button
                                                 variant="outline"
                                                 className="mt-auto w-full bg-transparent"
                                             >
-                                                Скачать DOCX
+                                                Скачать PDF
                                             </Button>
                                         </a>
                                     </CardContent>
