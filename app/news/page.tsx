@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin } from "lucide-react"
 import Link from "next/link"
 import { articles } from "@/public/articles"
+import { Img } from "@/components/ui/img"
 
 export default function NewsPage() {
   return (
@@ -36,7 +37,7 @@ export default function NewsPage() {
                   className="group overflow-hidden rounded-lg border-2 border-border bg-card transition-shadow hover:shadow-lg"
                 >
                   <div className="aspect-video overflow-hidden bg-muted">
-                    <img
+                    <Img
                       src={`/.jpg?height=300&width=400&query=${item.image}`}
                       alt={item.title}
                       className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
@@ -63,7 +64,7 @@ export default function NewsPage() {
         </section>
 
         {/* Newsletter Section */}
-        <section className="border-t border-border bg-muted/30 py-16 md:py-24">
+        {/* <section className="border-t border-border bg-muted/30 py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-balance text-3xl font-bold text-foreground md:text-4xl">Подпишитесь на новости</h2>
@@ -85,7 +86,7 @@ export default function NewsPage() {
               </form>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <Footer />

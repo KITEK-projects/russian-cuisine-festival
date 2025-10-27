@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { ChefHat, Users, Award, Calendar } from "lucide-react"
 import Link from "next/link"
+import { DividerPattern } from "@/components/ui/divider"
+import { Img } from "@/components/ui/img"
 
 export default function HomePage() {
     return (
@@ -79,7 +81,7 @@ export default function HomePage() {
 
                             <div className="relative flex justify-center h-full">
                                 <div className="aspect-square w-3/5 overflow-hidden rounded-lg bg-secondary/50">
-                                    <img
+                                    <Img
                                         src="/traditional-russian-bread-karavai-with-wheat-and-t.jpg"
                                         alt="Традиционный русский каравай"
                                         className="h-full object-cover"
@@ -92,6 +94,7 @@ export default function HomePage() {
                     </div>
                 </section>
 
+                <DividerPattern />
                 {/* About Section */}
                 <section id="about" className="scroll-mt-20 py-20 md:py-32">
                     <div className="container mx-auto px-4 md:px-6">
@@ -123,19 +126,19 @@ export default function HomePage() {
                         </div>
 
                         {/* Stats */}
-                        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                             <Card className="border-2 border-border bg-card text-center">
                                 <CardContent className="pt-6">
                                     <Calendar className="mx-auto mb-4 h-12 w-12 text-primary" />
                                     <div className="text-3xl font-bold text-foreground">
-                                        28
+                                        33
                                     </div>
                                     <div className="mt-2 text-sm text-muted-foreground">
                                         дней фестиваля
                                     </div>
                                 </CardContent>
                             </Card>
-                            <Card className="border-2 border-border bg-card text-center">
+                            {/* <Card className="border-2 border-border bg-card text-center">
                                 <CardContent className="pt-6">
                                     <Users className="mx-auto mb-4 h-12 w-12 text-primary" />
                                     <div className="text-3xl font-bold text-foreground">
@@ -145,7 +148,7 @@ export default function HomePage() {
                                         регионов России
                                     </div>
                                 </CardContent>
-                            </Card>
+                            </Card> */}
                             <Card className="border-2 border-border bg-card text-center">
                                 <CardContent className="pt-6">
                                     <ChefHat className="mx-auto mb-4 h-12 w-12 text-primary" />
@@ -186,23 +189,25 @@ export default function HomePage() {
                         </div>
 
                         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-                                <Card className="border-2 border-border bg-card">
-                                    <CardContent className="pt-6">
-                                        <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                                            <ChefHat className="h-8 w-8 text-primary" />
-                                        </div>
-                                        <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
-                                        <a href="for-restaurators.docx">
+                            <Card
+                                as="a"
+                                href="for-restaurators.docx"
+                                className="border-2 border-border bg-card"
+                            >
+                                <CardContent className="pt-6">
+                                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                                        <ChefHat className="h-8 w-8 text-primary" />
+                                    </div>
+                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
                                         Экскурсия для рестораторов
-                                        </a>
-                                        </h3>
-                                        {/* <p className="leading-relaxed text-muted-foreground">
+                                    </h3>
+                                    {/* <p className="leading-relaxed text-muted-foreground">
                             Обучение традиционным техникам
                             приготовления русских блюд от ведущих
                             шеф-поваров страны
                             </p> */}
-                                    </CardContent>
-                                </Card>
+                                </CardContent>
+                            </Card>
 
                             <Card className="border-2 border-border bg-card">
                                 <CardContent className="pt-6">
@@ -219,12 +224,16 @@ export default function HomePage() {
                                 </CardContent>
                             </Card>
 
-                            <Card className="border-2 border-border bg-card">
+                            <Card
+                                as="a"
+                                href="/park-omskaya-krepost.docx"
+                                className="border-2 border-border bg-card"
+                            >
                                 <CardContent className="pt-6">
                                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                                         <Award className="h-8 w-8 text-primary" />
                                     </div>
-                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
+                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground hover:underline ">
                                         Ярмарка русской кухни
                                     </h3>
                                     {/* <p className="leading-relaxed text-muted-foreground">
@@ -259,7 +268,7 @@ export default function HomePage() {
                         </div> */}
                     </div>
                 </section>
-
+                <DividerPattern />
                 {/* Gallery Section */}
                 <section className="py-20 md:py-32">
                     <div className="container mx-auto px-4 md:px-6">
@@ -285,7 +294,7 @@ export default function HomePage() {
                                     key={i}
                                     className="group relative aspect-square overflow-hidden rounded-lg bg-muted"
                                 >
-                                    <img
+                                    <Img
                                         src={`/.jpg?height=400&width=400&query=${query}`}
                                         alt={`Фото фестиваля ${i + 1}`}
                                         className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
@@ -355,7 +364,9 @@ export default function HomePage() {
                                             variant="outline"
                                             className="w-full bg-transparent"
                                         >
-                                            Скачать PDF
+                                            <a href="met-recs.pdf">
+                                                Скачать PDF
+                                            </a>
                                         </Button>
                                     </CardContent>
                                 </Card>
@@ -366,18 +377,20 @@ export default function HomePage() {
                                             Техническое задание
                                         </h3>
                                     </CardHeader>
-                                    <CardContent>
+                                    <CardContent className="flex-grow flex flex-col justify-between">
                                         <p className="mb-4 leading-relaxed text-muted-foreground">
                                             Требования к участникам, форма
                                             регистрации и технические условия
                                             проведения фестиваля
                                         </p>
-                                        <Button
-                                            variant="outline"
-                                            className="w-full bg-transparent"
-                                        >
-                                            Скачать DOCX
-                                        </Button>
+                                        <a href="/tehzadanie.docx">
+                                            <Button
+                                                variant="outline"
+                                                className="mt-auto w-full bg-transparent"
+                                            >
+                                                Скачать DOCX
+                                            </Button>
+                                        </a>
                                     </CardContent>
                                 </Card>
                             </div>
@@ -385,7 +398,7 @@ export default function HomePage() {
                     </div>
                 </section>
             </main>
-
+            <DividerPattern />
             <Footer />
         </div>
     )

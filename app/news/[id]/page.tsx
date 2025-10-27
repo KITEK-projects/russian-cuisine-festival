@@ -5,6 +5,7 @@ import { Calendar, MapPin, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { articles } from "@/public/articles"
+import { Img } from "@/components/ui/img"
 
 export async function generateStaticParams() {
     // Return all the "id" values that should be statically generated
@@ -86,7 +87,7 @@ export default async function NewsArticlePage({
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="mx-auto max-w-4xl">
                             <div className="aspect-video overflow-hidden rounded-lg bg-muted">
-                                <img
+                                <Img
                                     src={`/.jpg?height=600&width=1200&query=${article.image}`}
                                     alt={article.title}
                                     className="h-full w-full object-cover"
@@ -126,7 +127,7 @@ export default async function NewsArticlePage({
                                             className="group overflow-hidden rounded-lg border-2 border-border bg-card transition-shadow hover:shadow-lg"
                                         >
                                             <div className="aspect-video overflow-hidden bg-muted">
-                                                <img
+                                                <Img
                                                     src={`/.jpg?height=200&width=400&query=${item.image}`}
                                                     alt={item.title}
                                                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"

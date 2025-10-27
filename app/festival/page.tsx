@@ -293,10 +293,10 @@ export default function FestivalPage() {
                             <p className="text-lg">
                                 Телефон:{" "}
                                 <a
-                                    href="tel:77-04-17"
+                                    href="tel:83812770417"
                                     className="font-medium underline"
                                 >
-                                    77-04-17
+                                    8 (3812) 77-04-17
                                 </a>
                             </p>
                         </div>

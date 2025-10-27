@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Img } from "./ui/img"
 
 export function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -13,9 +14,9 @@ export function Header() {
             <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-3">
-                    <img
+                    <Img
                         className="flex h-14 items-center justify-center"
-                        src="frk_logo.png"
+                        src="/frk_logo.png"
                         alt=""
                     />
                     {/* <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary">

@@ -19,10 +19,10 @@ export function Footer() {
                             </p>
                             <p>
                                 <a
-                                    href="tel:77-04-17"
+                                    href="tel:83812770417"
                                     className="hover:text-primary"
                                 >
-                                    77-04-17
+                                    8 (3812) 77-04-17
                                 </a>
                             </p>
                         </div>
@@ -35,7 +35,7 @@ export function Footer() {
                         </h3>
                         <div className="flex gap-4">
                             <a
-                                href="#"
+                                href="https://vk.com/tur_omsk"
                                 className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground transition-colors hover:bg-primary/90"
                                 aria-label="VK"
                             >
@@ -57,25 +57,22 @@ export function Footer() {
                                 Колледж инновационных технологий и коммерции
                             </a>
                             <a
-                                href="https://omsktec.ru"
+                                href="https://mir-omsk.ru/"
                                 className="hover:text-primary"
                             >
                                 ООО "НПО "МИР"
                             </a>
                             <a
-                                href="https://omsktec.ru"
+                                href="https://www.x5.ru"
                                 className="hover:text-primary"
                             >
                                 Х5 Group
                             </a>
-                            <a
-                                href="https://omsktec.ru"
-                                className="hover:text-primary"
-                            >
+                            <a href="/" className="hover:text-primary">
                                 Ассоциация омских кулинаров
                             </a>
                             <a
-                                href="https://omsktec.ru"
+                                href="https://alfa-biz.ru"
                                 className="hover:text-primary"
                             >
                                 Альфа-бизнес (ТД "Шкуренко")
