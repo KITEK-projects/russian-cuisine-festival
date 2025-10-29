@@ -53,29 +53,66 @@ export function Footer() {
                             <a
                                 href="https://omsktec.ru"
                                 className="hover:text-primary"
+                                target="_blank"
                             >
-                                Колледж инновационных технологий, экономики и коммерции
+                                Колледж инновационных технологий, экономики и
+                                коммерции
                             </a>
                             <a
                                 href="https://mir-omsk.ru/"
                                 className="hover:text-primary"
+                                target="_blank"
                             >
                                 ООО НПО «МИР»
                             </a>
                             <a
                                 href="https://www.x5.ru"
                                 className="hover:text-primary"
+                                target="_blank"
                             >
                                 Х5 Group
                             </a>
-                            <a href="/" className="hover:text-primary">
+                            <a
+                                href="/"
+                                className="hover:text-primary"
+                                target="_blank"
+                            >
                                 Ассоциация омских кулинаров
                             </a>
                             <a
                                 href="https://alfa-biz.ru"
                                 className="hover:text-primary"
+                                target="_blank"
                             >
                                 Альфа-Бизнес (ТД «Шкуренко»)
+                            </a>
+                            <a
+                                href="https://kdlomsk.ru/"
+                                className="hover:text-primary"
+                                target="_blank"
+                            >
+                                Ресторан «Клуб деловых людей»
+                            </a>
+                            <a
+                                href="https://kdlomsk.ru/"
+                                className="hover:text-primary"
+                                target="_blank"
+                            >
+                                ООО «Новая Сибирь»
+                            </a>
+                            <a
+                                href="https://omsk-gcnt.ru/?ysclid=mhaoa3gv9f297161939"
+                                className="hover:text-primary"
+                                target="_blank"
+                            >
+                                Государственный центр народного творчества
+                            </a>
+                            <a
+                                href="https://gotoomsk.ru/?ysclid=mhaoawigx2692689349"
+                                className="hover:text-primary"
+                                target="_blank"
+                            >
+                                Туристический информационный центр
                             </a>
                         </p>
                     </div>

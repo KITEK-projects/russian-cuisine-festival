@@ -7,64 +7,75 @@ import { articles } from "@/public/articles"
 import { Img } from "@/components/ui/img"
 
 export default function NewsPage() {
-  return (
-    <div className="flex min-h-screen flex-col">
-      <Header />
+    return (
+        <div className="flex min-h-screen flex-col">
+            <Header />
 
-      <main className="flex-1">
-        {/* Hero Section */}
-        <section className="border-b border-border bg-gradient-to-br from-background via-secondary/20 to-background py-16 md:py-24">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="mx-auto max-w-3xl text-center">
-              <h1 className="text-balance text-4xl font-bold text-foreground md:text-5xl lg:text-6xl">
-                Новости фестиваля
-              </h1>
-              <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
-                Следите за актуальными событиями и мероприятиями Всероссийского фестиваля русской кухни
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* News Grid */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {articles.map((item) => (
-                <Link
-                  key={item.id}
-                  href={`/news/${item.id}`}
-                  className="group overflow-hidden rounded-lg border-2 border-border bg-card transition-shadow hover:shadow-lg"
-                >
-                  <div className="aspect-video overflow-hidden bg-muted">
-                    <Img
-                      src={`/.jpg?height=300&width=400&query=${item.image}`}
-                      alt={item.title}
-                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="mb-3 flex flex-wrap items-center gap-2">
-                      <Badge variant="secondary" className="bg-secondary text-secondary-foreground">
-                        <Calendar className="mr-1 h-3 w-3" />
-                        {item.date}
-                      </Badge>
-                      <Badge variant="outline" className="border-primary text-primary">
-                        <MapPin className="mr-1 h-3 w-3" />
-                        {item.region}
-                      </Badge>
+            <main className="flex-1">
+                {/* Hero Section */}
+                <section className="border-b border-border bg-gradient-to-br from-background via-secondary/20 to-background py-16 md:py-24">
+                    <div className="container mx-auto px-4 md:px-6">
+                        <div className="mx-auto max-w-3xl text-center">
+                            <h1 className="text-balance text-4xl font-bold text-foreground md:text-5xl lg:text-6xl">
+                                Новости фестиваля
+                            </h1>
+                            <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
+                                Следите за актуальными событиями и мероприятиями
+                                Всероссийского фестиваля русской кухни
+                            </p>
+                        </div>
                     </div>
-                    <h3 className="text-balance text-xl font-bold leading-tight text-foreground">{item.title}</h3>
-                    <p className="mt-3 leading-relaxed text-muted-foreground">{item.excerpt}</p>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
+                </section>
 
-        {/* Newsletter Section */}
-        {/* <section className="border-t border-border bg-muted/30 py-16 md:py-24">
+                {/* News Grid */}
+                <section className="py-16 md:py-24">
+                    <div className="container mx-auto px-4 md:px-6">
+                        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                            {articles.map((item) => (
+                                <Link
+                                    key={item.id}
+                                    href={`/news/${item.id}`}
+                                    className="group overflow-hidden rounded-lg border-2 border-border bg-card transition-shadow hover:shadow-lg"
+                                >
+                                    <div className="aspect-video overflow-hidden bg-muted">
+                                        <Img
+                                            src={`/.jpg?height=300&width=400&query=${item.image}`}
+                                            alt={item.title}
+                                            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                                        />
+                                    </div>
+                                    <div className="p-6">
+                                        <div className="mb-3 flex flex-wrap items-center gap-2">
+                                            <Badge
+                                                variant="secondary"
+                                                className="bg-secondary text-secondary-foreground"
+                                            >
+                                                <Calendar className="mr-1 h-3 w-3" />
+                                                {item.date}
+                                            </Badge>
+                                            <Badge
+                                                variant="outline"
+                                                className="border-primary text-primary"
+                                            >
+                                                <MapPin className="mr-1 h-3 w-3" />
+                                                {item.region}
+                                            </Badge>
+                                        </div>
+                                        <h3 className="text-balance text-xl font-bold leading-tight text-foreground">
+                                            {item.title}
+                                        </h3>
+                                        <p className="mt-3 leading-relaxed text-muted-foreground">
+                                            {item.excerpt}
+                                        </p>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* Newsletter Section */}
+                {/* <section className="border-t border-border bg-muted/30 py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-balance text-3xl font-bold text-foreground md:text-4xl">Подпишитесь на новости</h2>
@@ -87,9 +98,9 @@ export default function NewsPage() {
             </div>
           </div>
         </section> */}
-      </main>
+            </main>
 
-      <Footer />
-    </div>
-  )
+            <Footer />
+        </div>
+    )
 }

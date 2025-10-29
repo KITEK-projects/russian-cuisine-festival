@@ -2,7 +2,7 @@ type ImgProps = Omit<React.ImgHTMLAttributes<HTMLImageElement>, "src"> & {
     src: string
 }
 
-const BASE_PATH = "/russian-cuisine-festival"
+const BASE_PATH = ""
 
 export function Img({ src, alt, ...props }: ImgProps) {
     const fixedSrc = src.startsWith("/")

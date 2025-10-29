@@ -66,22 +66,18 @@ export default function HomePage() {
                                         </Link>
                                     </Button>
                                     <Button asChild size="lg" variant="outline">
-                                        <Link href="/festival">Программа</Link>
+                                        <Link href="#program-section">
+                                            Программа
+                                        </Link>
                                     </Button>
                                 </div>
                             </div>
 
-                            <div className="relative flex justify-center h-full">
-                                <div className="aspect-square w-3/5 overflow-hidden rounded-lg bg-secondary/50">
-                                    <Img
-                                        src="/traditional-russian-bread-karavai-with-wheat-and-t.jpg"
-                                        alt="Традиционный русский каравай"
-                                        className="h-full object-cover"
-                                    />
-                                </div>
-                                <div className="absolute -bottom-6 -right-6 h-32 w-32 rounded-full bg-accent/20 blur-3xl" />
-                                <div className="absolute -left-6 -top-6 h-32 w-32 rounded-full bg-primary/20 blur-3xl" />
-                            </div>
+                            <Img
+                                src="/traditional-russian-bread-karavai-with-wheat-and-t.png"
+                                alt="Традиционный русский каравай"
+                                className="xl:w-3/5 w-4/5 object-cover self-center rounded-lg justify-self-center"
+                            />
                         </div>
                     </div>
                 </section>
@@ -168,7 +164,10 @@ export default function HomePage() {
                 </section>
 
                 {/* Program Section */}
-                <section className="bg-muted/30 py-20 md:py-32">
+                <section
+                    id="program-section"
+                    className="bg-muted/30 py-20 md:py-32"
+                >
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="mb-12 text-center">
                             <h2 className="font-serif text-balance text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
@@ -183,7 +182,7 @@ export default function HomePage() {
                         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                             <Card
                                 as="a"
-                                href="/russian-cuisine-festival/for-restaurators.pdf"
+                                href="/for-restaurators.pdf"
                                 className="border-2 border-border bg-card"
                             >
                                 <CardContent className="pt-6">
@@ -218,7 +217,7 @@ export default function HomePage() {
 
                             <Card
                                 as="a"
-                                href="/russian-cuisine-festival/park-omskaya-krepost.pdf"
+                                href="/park-omskaya-krepost.pdf"
                                 className="border-2 border-border bg-card"
                             >
                                 <CardContent className="pt-6">
@@ -241,6 +240,8 @@ export default function HomePage() {
                                     </div>
                                     <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
                                         Месяц русской кухни
+                                        <br />
+                                        <em>(раздел в стадии разработки)</em>
                                     </h3>
                                     {/* <p className="leading-relaxed text-muted-foreground">
                                         ???
@@ -267,13 +268,17 @@ export default function HomePage() {
                         <div className="mb-12 text-center">
                             <h2 className="font-serif text-balance text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
                                 Галерея
+                                <br />
+                                <em className="text-xl">
+                                    Фотографии будут опубликованы 30 октября
+                                </em>
                             </h2>
                             {/* <p className="mt-4 text-lg text-muted-foreground">
                                 Моменты прошлых фестивалей
                             </p> */}
                         </div>
 
-                        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                        {/* <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                             {[
                                 "traditional+russian+feast+table+with+bread+and+dishes",
                                 "russian+chef+cooking+traditional+food",
@@ -293,7 +298,7 @@ export default function HomePage() {
                                     />
                                 </div>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
                 </section>
 
@@ -356,7 +361,7 @@ export default function HomePage() {
                                             variant="outline"
                                             className="w-full bg-transparent"
                                         >
-                                            <a href="/russian-cuisine-festival/met-recs.pdf">
+                                            <a href="/met-recs.pdf">
                                                 Скачать PDF
                                             </a>
                                         </Button>
@@ -375,7 +380,7 @@ export default function HomePage() {
                                             регистрации проведения "Месяца
                                             русской кухни"
                                         </p>
-                                        <a href="/russian-cuisine-festival/tehzadanie.pdf">
+                                        <a href="/tehzadanie.pdf">
                                             <Button
                                                 variant="outline"
                                                 className="mt-auto w-full bg-transparent"

@@ -8,17 +8,9 @@ import { articles } from "@/public/articles"
 import { Img } from "@/components/ui/img"
 
 export async function generateStaticParams() {
-    // Return all the "id" values that should be statically generated
-    return [
-        { id: "1" },
-        { id: "2" },
-        { id: "3" },
-        { id: "4" },
-        { id: "5" },
-        { id: "6" },
-        { id: "7" },
-        { id: "8" },
-    ]
+    return articles.map((_, i) => ({
+        id: i.toString(),
+    }))
 }
 
 export default async function NewsArticlePage({

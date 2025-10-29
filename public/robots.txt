@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://xn--80atbajfhljagpf2a1me.xn--p1ai/
+
+# Sitemaps
+Sitemap: https://xn--80atbajfhljagpf2a1me.xn--p1ai/sitemap.xml
