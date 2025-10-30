@@ -1,0 +1,44 @@
+name: 🚀 Deploy via FTP
+
+on:
+    push:
+        branches:
+            - main # or "master" or any branch you deploy from
+
+jobs:
+    deploy:
+        name: FTP Deploy
+        runs-on: ubuntu-latest
+        steps:
+            - name: 🧩 Checkout repository
+              uses: actions/checkout@v4
+
+            - name: 🧰 Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+                  cache: "pnpm"
+
+            - name: 📦 Install pnpm
+              run: npm install -g pnpm
+
+            - name: 📥 Install dependencies
+              run: pnpm install --frozen-lockfile
+
+            - name: 🏗️ Build project
+              run: pnpm run build
+
+            - name: 📂 Deploy via FTP
+              uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+              with:
+                  server: ${{ secrets.FTP_SERVER }}
+                  username: ${{ secrets.FTP_USERNAME }}
+                  password: ${{ secrets.FTP_PASSWORD }}
+                  # dangerous-clean-slate: true
+                  server-dir: /home/c/cw244177/public_html # remote directory on the server
+                  local-dir: ./out # path to your build output
+                  exclude: |
+                      **/.git*
+                      **/.github*
+                      **/node_modules/**
+                      **/*.map

@@ -15,17 +15,16 @@ export default function FestivalPage() {
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="mx-auto max-w-4xl text-center">
                             <h1 className="text-balance text-4xl font-bold text-foreground md:text-5xl lg:text-6xl">
-                                О фестивале русской кухни
+                                Участники месяца русской кухни
                             </h1>
                             <p className="mt-6 text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
-                                Масштабное культурное событие, объединяющее
-                                традиции, инновации и любовь к русской кулинарии
+                                Раздел в стадии разработки
                             </p>
                         </div>
                     </div>
                 </section>
 
-                {/* Mission Section */}
+                {/* 
                 <section className="py-16 md:py-24">
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="mx-auto max-w-4xl">
@@ -53,7 +52,6 @@ export default function FestivalPage() {
                     </div>
                 </section>
 
-                {/* Goals Section */}
                 <section className="bg-muted/30 py-16 md:py-24">
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="mb-12 text-center">
@@ -181,7 +179,6 @@ export default function FestivalPage() {
                     </div>
                 </section>
 
-                {/* Geography Section */}
                 <section className="py-16 md:py-24">
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="mx-auto max-w-4xl">
@@ -227,7 +224,6 @@ export default function FestivalPage() {
                     </div>
                 </section>
 
-                {/* Organizers Section */}
                 <section className="bg-muted/30 py-16 md:py-24">
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="mx-auto max-w-4xl">
@@ -269,9 +265,6 @@ export default function FestivalPage() {
                     </div>
                 </section>
 
-                {/* Documents Section */}
-
-                {/* Contact Section */}
                 <section className="border-t border-border bg-primary py-16 text-primary-foreground md:py-24">
                     <div className="container mx-auto px-4 text-center md:px-6">
                         <h2 className="text-balance text-3xl font-bold md:text-4xl">
@@ -301,7 +294,7 @@ export default function FestivalPage() {
                             </p>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </main>
 
             <Footer />

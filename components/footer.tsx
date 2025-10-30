@@ -73,7 +73,7 @@ export function Footer() {
                                 Х5 Group
                             </a>
                             <a
-                                href="/"
+                                href="#"
                                 className="hover:text-primary"
                                 target="_blank"
                             >
@@ -94,7 +94,7 @@ export function Footer() {
                                 Ресторан «Клуб деловых людей»
                             </a>
                             <a
-                                href="https://kdlomsk.ru/"
+                                href="#"
                                 className="hover:text-primary"
                                 target="_blank"
                             >
@@ -112,7 +112,7 @@ export function Footer() {
                                 className="hover:text-primary"
                                 target="_blank"
                             >
-                                Туристический информационный центр
+                                Туристский информационный центр
                             </a>
                         </p>
                     </div>

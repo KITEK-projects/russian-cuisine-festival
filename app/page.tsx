@@ -376,9 +376,7 @@ export default function HomePage() {
                                     </CardHeader>
                                     <CardContent className="flex-grow flex flex-col justify-between">
                                         <p className="mb-4 leading-relaxed text-muted-foreground">
-                                            Требования к участникам, форма
-                                            регистрации проведения "Месяца
-                                            русской кухни"
+                                            Требования к участникам, форма регистрации, и технические условия проведения "Месяца русской кухни"
                                         </p>
                                         <a href="/tehzadanie.pdf">
                                             <Button
