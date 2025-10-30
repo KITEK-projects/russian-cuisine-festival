@@ -4,6 +4,7 @@ import { Inter, Cormorant } from "next/font/google"
 import localFont from "next/font/local"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import YandexMetrica from "@/lib/yandexMetrica"
 
 const inter = Inter({
     subsets: ["latin", "cyrillic"],
@@ -51,6 +52,7 @@ export default function RootLayout({
             >
                 {children}
                 <Analytics />
+                <YandexMetrica />
             </body>
         </html>
     )
