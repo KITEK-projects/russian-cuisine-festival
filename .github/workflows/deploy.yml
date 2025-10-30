@@ -13,14 +13,14 @@ jobs:
             - name: 🧩 Checkout repository
               uses: actions/checkout@v4
 
-            - name: 🧰 Set up Node.js
-              uses: actions/setup-node@v4
+            - uses: actions/setup-node@v4
               with:
                   node-version: 20
-                  cache: "pnpm"
 
-            - name: 📦 Install pnpm
-              run: npm install -g pnpm
+            - uses: pnpm/action-setup@v3
+              with:
+                  version: 9
+                  run_install: true
 
             - name: 📥 Install dependencies
               run: pnpm install --frozen-lockfile
@@ -35,8 +35,8 @@ jobs:
                   username: ${{ secrets.FTP_USERNAME }}
                   password: ${{ secrets.FTP_PASSWORD }}
                   # dangerous-clean-slate: true
-                  server-dir: /home/c/cw244177/public_html # remote directory on the server
-                  local-dir: ./out # path to your build output
+                  server-dir: /public_html/ # remote directory on the server
+                  local-dir: ./out/ # path to your build output
                   exclude: |
                       **/.git*
                       **/.github*
