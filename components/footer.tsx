@@ -51,7 +51,7 @@ export function Footer() {
                         </h3>
                         <p className="text-sm flex flex-col text-muted-foreground">
                             <a
-                                href="https://omsktec.ru"
+                                href="https://omsktec.ru/"
                                 className="hover:text-primary"
                                 target="_blank"
                             >
@@ -66,21 +66,21 @@ export function Footer() {
                                 ООО НПО «МИР»
                             </a>
                             <a
-                                href="https://www.x5.ru"
+                                href="https://www.x5.ru/ru/"
                                 className="hover:text-primary"
                                 target="_blank"
                             >
                                 Х5 Group
                             </a>
                             <a
-                                href="#"
+                                href="http://akoomsk.ru/"
                                 className="hover:text-primary"
                                 target="_blank"
                             >
                                 Ассоциация омских кулинаров
                             </a>
                             <a
-                                href="https://alfa-biz.ru"
+                                href="https://alfa-biz.ru/"
                                 className="hover:text-primary"
                                 target="_blank"
                             >
@@ -113,6 +113,13 @@ export function Footer() {
                                 target="_blank"
                             >
                                 Туристский информационный центр
+                            </a>
+                            <a
+                                href="https://www.nizkocen.ru/?ysclid=mhczz6s679346473489"
+                                className="hover:text-primary"
+                                target="_blank"
+                            >
+                                ООО "Холлифуд"
                             </a>
                         </p>
                     </div>
