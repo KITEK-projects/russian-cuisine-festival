@@ -31,21 +31,21 @@ export default function NewsPage() {
                 <section className="py-16 md:py-24">
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                            {articles.map((item) => (
+                            {articles.toReversed().map((item) => (
                                 <Link
                                     key={item.id}
                                     href={`/news/${item.id}`}
                                     className="group overflow-hidden rounded-lg border-2 border-border bg-card transition-shadow hover:shadow-lg"
                                 >
-                                    {item.images && (
-                                        <div className="aspect-video overflow-hidden bg-muted">
+                                    <div className="aspect-video overflow-hidden bg-muted">
+                                        {item.images && (
                                             <Img
                                                 src={item.images[0]}
                                                 alt={item.title}
                                                 className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
                                             />
-                                        </div>
-                                    )}
+                                        )}
+                                    </div>
                                     <div className="p-6">
                                         <div className="mb-3 flex flex-wrap items-center gap-2">
                                             {item.date && (
