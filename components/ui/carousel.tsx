@@ -8,6 +8,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import AutoHeight from "embla-carousel-auto-height"
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
@@ -46,11 +47,12 @@ function Carousel({
     orientation = "horizontal",
     opts,
     setApi,
-    plugins,
+    // plugins,
     className,
     children,
     ...props
 }: React.ComponentProps<"div"> & CarouselProps) {
+    const plugins = React.useMemo(() => [AutoHeight()], [])
     const [carouselRef, api] = useEmblaCarousel(
         {
             ...opts,

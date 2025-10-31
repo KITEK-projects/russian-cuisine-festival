@@ -37,29 +37,33 @@ export default function NewsPage() {
                                     href={`/news/${item.id}`}
                                     className="group overflow-hidden rounded-lg border-2 border-border bg-card transition-shadow hover:shadow-lg"
                                 >
-                                    <div className="aspect-video overflow-hidden bg-muted">
-                                        <Img
-                                            src={`/.jpg?height=300&width=400&query=${item.image}`}
-                                            alt={item.title}
-                                            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-                                        />
-                                    </div>
+                                    {item.images && (
+                                        <div className="aspect-video overflow-hidden bg-muted">
+                                            <Img
+                                                src={item.images[0]}
+                                                alt={item.title}
+                                                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                                            />
+                                        </div>
+                                    )}
                                     <div className="p-6">
                                         <div className="mb-3 flex flex-wrap items-center gap-2">
-                                            <Badge
-                                                variant="secondary"
-                                                className="bg-secondary text-secondary-foreground"
-                                            >
-                                                <Calendar className="mr-1 h-3 w-3" />
-                                                {item.date}
-                                            </Badge>
-                                            <Badge
+                                            {item.date && (
+                                                <Badge
+                                                    variant="secondary"
+                                                    className="bg-secondary text-secondary-foreground"
+                                                >
+                                                    <Calendar className="mr-1 h-3 w-3" />
+                                                    {item.date}
+                                                </Badge>
+                                            )}
+                                            {/* <Badge
                                                 variant="outline"
                                                 className="border-primary text-primary"
                                             >
                                                 <MapPin className="mr-1 h-3 w-3" />
                                                 {item.region}
-                                            </Badge>
+                                            </Badge> */}
                                         </div>
                                         <h3 className="text-balance text-xl font-bold leading-tight text-foreground">
                                             {item.title}

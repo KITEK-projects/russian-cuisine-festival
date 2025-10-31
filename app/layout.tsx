@@ -5,6 +5,8 @@ import localFont from "next/font/local"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import YandexMetrica from "@/lib/yandexMetrica"
+import { articles } from "@/public/articles"
+import "@/styles/components.css"
 
 const inter = Inter({
     subsets: ["latin", "cyrillic"],

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+article.article > h2 {
+    @apply font-serif text-balance text-xl font-bold md:text-2xl lg:text-3xl;
+}
+
+article.article > p {
+    text-align: justify;
+}
