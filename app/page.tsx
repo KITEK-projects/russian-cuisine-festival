@@ -182,7 +182,7 @@ export default function HomePage() {
                         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                             <Card
                                 as="a"
-                                href="/for-restaurators.pdf"
+                                href="/event-program/for-restaurateur"
                                 className="border-2 border-border bg-card"
                             >
                                 <CardContent className="pt-6">
@@ -206,8 +206,8 @@ export default function HomePage() {
                                         <Users className="h-8 w-8 text-primary" />
                                     </div>
                                     <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
-                                        Конкурс среди педагогов по компетенции
-                                        "Поварское дело"
+                                        Конкурс среди преподавателей по
+                                        компетенции "Поварское дело"
                                     </h3>
                                     {/* <p className="leading-relaxed text-muted-foreground">
                                         ???
@@ -217,7 +217,7 @@ export default function HomePage() {
 
                             <Card
                                 as="a"
-                                href="/park-omskaya-krepost.pdf"
+                                href="/event-program/fair"
                                 className="border-2 border-border bg-card"
                             >
                                 <CardContent className="pt-6">
@@ -233,15 +233,17 @@ export default function HomePage() {
                                 </CardContent>
                             </Card>
 
-                            <Card className="border-2 border-border bg-card">
+                            <Card
+                                as="a"
+                                href="/festival"
+                                className="border-2 border-border bg-card"
+                            >
                                 <CardContent className="pt-6">
                                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                                         <Award className="h-8 w-8 text-primary" />
                                     </div>
-                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
-                                        Месяц русской кухни
-                                        <br />
-                                        <em>(раздел в стадии разработки)</em>
+                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground hover-underline">
+                                        Участники месяца русской кухни
                                     </h3>
                                     {/* <p className="leading-relaxed text-muted-foreground">
                                         ???
@@ -376,7 +378,9 @@ export default function HomePage() {
                                     </CardHeader>
                                     <CardContent className="flex-grow flex flex-col justify-between">
                                         <p className="mb-4 leading-relaxed text-muted-foreground">
-                                            Требования к участникам, форма регистрации, и технические условия проведения "Месяца русской кухни"
+                                            Требования к участникам, форма
+                                            регистрации, и технические условия
+                                            проведения "Месяца русской кухни"
                                         </p>
                                         <a href="/tehzadanie.pdf">
                                             <Button
