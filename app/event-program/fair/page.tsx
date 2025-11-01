@@ -31,7 +31,7 @@ export default function Fair() {
                             <h2 className="font-serif text-balance text-3xl font-bold text-foreground md:text-4xl lg:text-5xl text-center">
                                 Ярмарка русской кухни
                             </h2>
-                            <div className="space-y-3 text-lg leading-relaxed text-muted-foreground">
+                            <div className="space-y-3 text-lg leading-relaxed">
                                 <p className="indent-8">
                                     В 2025 году исторический парк «Омская
                                     крепость» получил президентский грант на

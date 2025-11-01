@@ -81,9 +81,9 @@ export default function ForRestaurateurs() {
                             </h3>
 
                             <blockquote className="border-l-4 border-primary pl-6 font-serif text-lg italic leading-relaxed text-foreground">
-                                30 октября 2025 г., 14.40 часов г. Омск, ул.
+                                30 октября 2025 г., 14.40 часов
                                 <br />
-                                Успешная, д. 51
+                                г. Омск, ул. Успешная, д. 51
                             </blockquote>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ export default function ForRestaurateurs() {
 
                 {/* About Section */}
                 <section id="event" className="scroll-mt-20 py-10 md:py-20">
-                    <div className="container overflow-x-auto rounded-lg border border-gray-200 shadow-md mx-auto px-4 md:px-6">
+                    <div className="container mx-auto max-w-5xl overflow-x-auto rounded-lg border border-gray-200 shadow-md mx-auto px-4 md:px-6">
                         <Table className="xl:text-base">
                             <TableHeader>
                                 <TableRow className="bg-gray-50">

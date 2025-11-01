@@ -189,7 +189,7 @@ export default function HomePage() {
                                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                                         <ChefHat className="h-8 w-8 text-primary" />
                                     </div>
-                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground hover:underline ">
+                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground hover:underline">
                                         Экскурсия для рестораторов
                                     </h3>
                                     {/* <p className="leading-relaxed text-muted-foreground">
@@ -224,7 +224,7 @@ export default function HomePage() {
                                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                                         <Award className="h-8 w-8 text-primary" />
                                     </div>
-                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground hover:underline ">
+                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground hover:underline">
                                         Ярмарка русской кухни
                                     </h3>
                                     {/* <p className="leading-relaxed text-muted-foreground">
@@ -242,7 +242,7 @@ export default function HomePage() {
                                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                                         <Award className="h-8 w-8 text-primary" />
                                     </div>
-                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground hover-underline">
+                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground hover:underline">
                                         Участники месяца русской кухни
                                     </h3>
                                     {/* <p className="leading-relaxed text-muted-foreground">
