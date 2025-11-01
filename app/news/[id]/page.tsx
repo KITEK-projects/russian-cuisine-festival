@@ -115,7 +115,7 @@ export default async function NewsArticlePage({
                                     __html: article.content,
                                 }}
                             />
-                            {article.images && (
+                            {article.images && article.images.length >= 3 && (
                                 <Carousel
                                     opts={{ loop: true }}
                                     className="mt-8 w-full relative"

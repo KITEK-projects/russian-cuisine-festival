@@ -90,6 +90,7 @@ export const participants: IParticipant[] = [
     {
         title: "Ресторан «Клуб Деловых Людей»",
         link: "https://vk.com/kdloms",
+        image: "/kdl.png",
         id: "restoran-klub-delovykh-lyudey",
         description: "Национальные традиции русского гостеприимства.",
         website: "http://kdlomsk.ru",

@@ -1,5 +1,4 @@
 import { IParticipant } from "@/public/data/participants"
-import { Img } from "./ui/img"
 
 interface IParticipantProps extends IParticipant {}
 

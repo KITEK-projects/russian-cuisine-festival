@@ -200,12 +200,16 @@ export default function HomePage() {
                                 </CardContent>
                             </Card>
 
-                            <Card className="border-2 border-border bg-card">
+                            <Card
+                                as="a"
+                                href="/news/4"
+                                className="border-2 border-border bg-card"
+                            >
                                 <CardContent className="pt-6">
                                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                                         <Users className="h-8 w-8 text-primary" />
                                     </div>
-                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
+                                    <h3 className="mb-3 font-serif text-xl font-bold text-foreground hover:underline">
                                         Конкурс среди преподавателей по
                                         компетенции "Поварское дело"
                                     </h3>
@@ -270,37 +274,67 @@ export default function HomePage() {
                         <div className="mb-12 text-center">
                             <h2 className="font-serif text-balance text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
                                 Галерея
-                                <br />
+                                {/* <br />
                                 <em className="text-xl">
                                     Фотографии будут опубликованы 30 октября
-                                </em>
+                                </em> */}
                             </h2>
                             {/* <p className="mt-4 text-lg text-muted-foreground">
                                 Моменты прошлых фестивалей
                             </p> */}
                         </div>
 
-                        {/* <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                             {[
-                                "traditional+russian+feast+table+with+bread+and+dishes",
-                                "russian+chef+cooking+traditional+food",
-                                "traditional+russian+pastries+and+bread",
-                                "russian+festival+tent+with+decorations",
-                                "people+tasting+traditional+russian+food",
-                                "traditional+russian+kitchen+utensils+and+ingredients",
+                                {
+                                    src: "/gallery/4.jpg",
+                                    alt: "Пресс-конференция организаторов фестиваля",
+                                },
+                                {
+                                    src: "/gallery/5.jpg",
+                                    alt: "Пресс-конференция организаторов фестиваля",
+                                },
+                                {
+                                    src: "/gallery/6.jpg",
+                                    alt: "Пресс-конференция организаторов фестиваля",
+                                },
+                                {
+                                    src: "/gallery/1.jpg",
+                                    alt: 'Партнёр фестиваля ООО НПО "Мир"',
+                                },
+                                {
+                                    src: "/gallery/2.jpg",
+                                    alt: 'Партнёр фестиваля ООО НПО "Мир"',
+                                },
+                                {
+                                    src: "/gallery/3.jpg",
+                                    alt: 'Партнёр фестиваля ООО НПО "Мир"',
+                                },
+                                {
+                                    src: "/articles/contest/1.jpg",
+                                    alt: "Фестиваль русской кухни",
+                                },
+                                {
+                                    src: "/articles/contest/2.jpg",
+                                    alt: "Фестиваль русской кухни",
+                                },
+                                {
+                                    src: "/articles/contest/3.jpg",
+                                    alt: "Фестиваль русской кухни",
+                                },
                             ].map((query, i) => (
                                 <div
                                     key={i}
                                     className="group relative aspect-square overflow-hidden rounded-lg bg-muted"
                                 >
                                     <Img
-                                        src={`/.jpg?height=400&width=400&query=${query}`}
-                                        alt={`Фото фестиваля ${i + 1}`}
+                                        src={query.src}
+                                        alt={query.alt}
                                         className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
                                     />
                                 </div>
                             ))}
-                        </div> */}
+                        </div>
                     </div>
                 </section>
 
