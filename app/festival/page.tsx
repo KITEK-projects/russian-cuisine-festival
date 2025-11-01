@@ -3,6 +3,9 @@ import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Target, Users, Globe, TrendingUp, BookOpen, Award } from "lucide-react"
+import { participants } from "@/public/data/participants"
+import Participant from "@/components/participant"
+import { DividerPattern } from "@/components/ui/divider"
 
 export default function FestivalPage() {
     return (
@@ -13,13 +16,15 @@ export default function FestivalPage() {
                 {/* Hero Section */}
                 <section className="border-b border-border bg-gradient-to-br from-background via-secondary/20 to-background py-16 md:py-24">
                     <div className="container mx-auto px-4 md:px-6">
-                        <div className="mx-auto max-w-4xl text-center">
-                            <h1 className="text-balance text-4xl font-bold text-foreground md:text-5xl lg:text-6xl">
+                        <div className="mx-auto max-w-4xl">
+                            <h1 className="mb-8 text-balance text-center text-4xl font-bold text-foreground md:text-5xl lg:text-6xl">
                                 Участники месяца русской кухни
                             </h1>
-                            <p className="mt-6 text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
-                                Раздел в стадии разработки
-                            </p>
+                            <div className="participants grid grid-cols-1 md:grid-cols-2 gap-8">
+                                {participants.map((el) => (
+                                    <Participant key={el.id} {...el} />
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -301,3 +306,5 @@ export default function FestivalPage() {
         </div>
     )
 }
+
+// const images = document.querySelector(".article_photo_carousel_inner")!.children[0].querySelector("img").src
