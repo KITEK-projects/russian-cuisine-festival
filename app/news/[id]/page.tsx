@@ -93,7 +93,7 @@ export default async function NewsArticlePage({
                     <section className="border-b border-border">
                         <div className="container mx-auto px-4 md:px-6">
                             <div className="mx-auto max-w-4xl">
-                                <div className="aspect-video overflow-hidden rounded-lg bg-muted">
+                                <div className="overflow-hidden rounded-lg bg-muted">
                                     <Img
                                         src={article.images[0]}
                                         alt={article.title}
