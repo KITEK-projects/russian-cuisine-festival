@@ -392,14 +392,14 @@ export default function HomePage() {
                                 </p>
                             </div>
 
-                            <div className="grid gap-6 md:grid-cols-2">
+                            <div className="grid gap-6 md:grid-cols-3">
                                 <Card className="border-2 border-border bg-card">
                                     <CardHeader>
                                         <h3 className="text-xl font-bold text-foreground">
                                             Методические рекомендации
                                         </h3>
                                     </CardHeader>
-                                    <CardContent>
+                                    <CardContent className="flex-grow flex flex-col justify-between">
                                         <p className="mb-4 leading-relaxed text-muted-foreground">
                                             Подробное описание целей, задач,
                                             традиционных блюд и рекомендации по
@@ -429,6 +429,30 @@ export default function HomePage() {
                                             проведения "Месяца русской кухни"
                                         </p>
                                         <a href="/tehzadanie.pdf">
+                                            <Button
+                                                variant="outline"
+                                                className="mt-auto w-full bg-transparent"
+                                            >
+                                                Скачать PDF
+                                            </Button>
+                                        </a>
+                                    </CardContent>
+                                </Card>
+
+                                <Card className="border-2 border-border bg-card">
+                                    <CardHeader>
+                                        <h3 className="text-xl font-bold text-foreground">
+                                            Конкурс профессионального мастерства
+                                        </h3>
+                                    </CardHeader>
+                                    <CardContent className="flex-grow flex flex-col justify-between">
+                                        <p className="mb-4 leading-relaxed text-muted-foreground">
+                                            Регламент, организация и проведение
+                                            конкурса профессионального
+                                            мастерства среди педагогов и
+                                            мастеров производственного обучения
+                                        </p>
+                                        <a href="/konkurs.pdf">
                                             <Button
                                                 variant="outline"
                                                 className="mt-auto w-full bg-transparent"
