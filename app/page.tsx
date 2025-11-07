@@ -413,7 +413,7 @@ export default function HomePage() {
                                     <CardContent className="flex-grow flex flex-col justify-between">
                                         <p className="mb-4 leading-relaxed text-muted-foreground">
                                             Требования к участникам, форма
-                                            регистрации, и технические условия
+                                            регистрации и технические условия
                                             проведения "Месяца русской кухни"
                                         </p>
                                         <a href="/tehzadanie.pdf">
