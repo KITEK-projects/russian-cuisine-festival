@@ -322,6 +322,18 @@ export default function HomePage() {
                                     src: "/articles/contest/3.jpg",
                                     alt: "Фестиваль русской кухни",
                                 },
+                                {
+                                    src: "/gallery/7.jpg",
+                                    alt: "Ярмарка",
+                                },
+                                {
+                                    src: "/gallery/8.jpg",
+                                    alt: "Ярмарка",
+                                },
+                                {
+                                    src: "/gallery/9.jpg",
+                                    alt: "Ярмарка",
+                                },
                             ].map((query, i) => (
                                 <div
                                     key={i}
