@@ -60,7 +60,7 @@ export const participants: IParticipant[] = [
         id: "restoran-prozharka",
         description:
             "Погрузитесь в атмосферу «PROЖАРКИ» — мясного ресторана, концепция которого построена на магии трёх элементов: здесь живой огонь шепчет свои секреты сочнейшим стейкам, мощный гриль превращает каждый кусок в кулинарный шедевр, а первоклассное мясо становится центром вселенной для истинных гурманов.",
-        website: "https://prozharkaomsk.taplink.ws/",
+        website: "https://prozharkaomsk.ru",
         address: "ул. Карла Маркса, 18/4",
         phone: "+7 (913) 148-98-72",
         image: "https://sun9-78.userapi.com/s/v1/ig2/shVQntqZd6QZRm0a1rUmCpjvNQqhfJkYXK7AZsIHG6p7LekAp4sD_0Rbd9obdprhCzc9pdXoTfqOq8PbK3L0Nuug.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280,1440x1440,1920x1920&from=bu&cs=540x0",
