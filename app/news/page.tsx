@@ -42,7 +42,7 @@ export default function NewsPage() {
                                             <Img
                                                 src={item.images[0]}
                                                 alt={item.title}
-                                                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                                                className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-110"
                                             />
                                         )}
                                     </div>

@@ -90,7 +90,7 @@ export const participants: IParticipant[] = [
     {
         title: "Ресторан «Клуб Деловых Людей»",
         link: "https://vk.com/kdloms",
-        image: "/kdl.png",
+        image: "/participants/kdl.png",
         id: "restoran-klub-delovykh-lyudey",
         description: "Национальные традиции русского гостеприимства.",
         website: "http://kdlomsk.ru",
@@ -283,5 +283,16 @@ export const participants: IParticipant[] = [
         address: "ул. 70 лет Октября, 19, цоколь",
         phone: "+7 (3812) 92-79-20",
         image: "https://sun9-82.userapi.com/s/v1/ig2/zEt_2LDBh110wdIK58xaEGDP-0IPF7JlHjgm1zGPvgowJVtrykXzRmIaOTV6dSw5a2cO0FHlM81LLurFZyNhm4il.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1000x1000&from=bu&cs=540x0",
+    },
+    {
+        title: "«Омская ресторанная группа»",
+        link: "https://vk.com/omskayarestorannayagruppa",
+        id: "omsk-restaurant-group",
+        description:
+            "«Омская ресторанная группа» превращает кухню в язык региона — яркий, современный, убедительный. Наши рестораны создают блюда, в которых оживает Омск: прохлада Иртыша, мощь сибирской природы, пульс городских кварталов. Мы не просто сохраняем традиции — мы развиваем их, чтобы каждый приём пищи, в любое время дня, становился захватывающим путешествием по гастрономической карте Омска.",
+        website: "https://омскресторан.рф",
+        address: "ул. Поворотникова, 6",
+        phone: "+7 (900) 670-35-36",
+        image: "/participants/omsk-restaurant-group.jpg",
     },
 ]

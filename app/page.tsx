@@ -334,6 +334,18 @@ export default function HomePage() {
                                     src: "/gallery/9.jpg",
                                     alt: "Ярмарка",
                                 },
+                                {
+                                    src: "/articles/gastro-mk/7.jpg",
+                                    alt: "Гастрономический мастер-класс «Русский вкус – наше все!»",
+                                },
+                                {
+                                    src: "/articles/gastro-mk/8.jpg",
+                                    alt: "Гастрономический мастер-класс «Русский вкус – наше все!»",
+                                },
+                                {
+                                    src: "/articles/gastro-mk/9.jpg",
+                                    alt: "Гастрономический мастер-класс «Русский вкус – наше все!»",
+                                },
                             ].map((query, i) => (
                                 <div
                                     key={i}
