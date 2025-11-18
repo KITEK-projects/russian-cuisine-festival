@@ -1,5 +1,4 @@
 import { Header } from "@/components/header"
-import AutoHeight from "embla-carousel-auto-height"
 import { Footer } from "@/components/footer"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin, ArrowLeft } from "lucide-react"
@@ -14,8 +13,6 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import { Card, CardContent } from "@/components/ui/card"
-import { useMemo } from "react"
 
 export async function generateStaticParams() {
     return articles.map((id) => ({

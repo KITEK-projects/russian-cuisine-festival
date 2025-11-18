@@ -52,13 +52,12 @@ function Carousel({
     children,
     ...props
 }: React.ComponentProps<"div"> & CarouselProps) {
-    const plugins = React.useMemo(() => [AutoHeight()], [])
     const [carouselRef, api] = useEmblaCarousel(
         {
             ...opts,
             axis: orientation === "horizontal" ? "x" : "y",
         },
-        plugins,
+        [AutoHeight()],
     )
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)

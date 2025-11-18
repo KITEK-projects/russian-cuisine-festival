@@ -1,3 +1,5 @@
+"use client"
+
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
@@ -6,8 +8,91 @@ import { ChefHat, Users, Award, Calendar } from "lucide-react"
 import Link from "next/link"
 import { DividerPattern } from "@/components/ui/divider"
 import { Img } from "@/components/ui/img"
+import { useIsMobile } from "@/hooks/use-mobile"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+} from "@/components/ui/carousel"
 
 export default function HomePage() {
+    const isMobile = useIsMobile()
+
+    const gallery = [
+        {
+            src: "/gallery/4.jpg",
+            alt: "Пресс-конференция организаторов фестиваля",
+        },
+        {
+            src: "/gallery/5.jpg",
+            alt: "Пресс-конференция организаторов фестиваля",
+        },
+        {
+            src: "/gallery/6.jpg",
+            alt: "Пресс-конференция организаторов фестиваля",
+        },
+        {
+            src: "/gallery/1.jpg",
+            alt: 'Партнёр фестиваля ООО НПО "Мир"',
+        },
+        {
+            src: "/gallery/2.jpg",
+            alt: 'Партнёр фестиваля ООО НПО "Мир"',
+        },
+        {
+            src: "/gallery/3.jpg",
+            alt: 'Партнёр фестиваля ООО НПО "Мир"',
+        },
+        {
+            src: "/articles/contest/1.jpg",
+            alt: "Фестиваль русской кухни",
+        },
+        {
+            src: "/articles/contest/2.jpg",
+            alt: "Фестиваль русской кухни",
+        },
+        {
+            src: "/articles/contest/3.jpg",
+            alt: "Фестиваль русской кухни",
+        },
+        {
+            src: "/gallery/7.jpg",
+            alt: "Ярмарка",
+        },
+        {
+            src: "/gallery/8.jpg",
+            alt: "Ярмарка",
+        },
+        {
+            src: "/gallery/9.jpg",
+            alt: "Ярмарка",
+        },
+        {
+            src: "/articles/gastro-mk/7.jpg",
+            alt: "Гастрономический мастер-класс «Русский вкус – наше все!»",
+        },
+        {
+            src: "/articles/gastro-mk/8.jpg",
+            alt: "Гастрономический мастер-класс «Русский вкус – наше все!»",
+        },
+        {
+            src: "/articles/gastro-mk/9.jpg",
+            alt: "Гастрономический мастер-класс «Русский вкус – наше все!»",
+        },
+        {
+            src: "/articles/smotr-konkurs/5.jpg",
+            alt: "Смотр-конкурс блюд русской кухни в рамках Всероссийского фестиваля русской кухни",
+        },
+        {
+            src: "/articles/smotr-konkurs/4.jpg",
+            alt: "Смотр-конкурс блюд русской кухни в рамках Всероссийского фестиваля русской кухни",
+        },
+        {
+            src: "/articles/smotr-konkurs/2.jpg",
+            alt: "Смотр-конкурс блюд русской кухни в рамках Всероссийского фестиваля русской кухни",
+        },
+    ]
+
     return (
         <div className="flex min-h-screen flex-col relative">
             <Header />
@@ -284,81 +369,41 @@ export default function HomePage() {
                             </p> */}
                         </div>
 
-                        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                            {[
-                                {
-                                    src: "/gallery/4.jpg",
-                                    alt: "Пресс-конференция организаторов фестиваля",
-                                },
-                                {
-                                    src: "/gallery/5.jpg",
-                                    alt: "Пресс-конференция организаторов фестиваля",
-                                },
-                                {
-                                    src: "/gallery/6.jpg",
-                                    alt: "Пресс-конференция организаторов фестиваля",
-                                },
-                                {
-                                    src: "/gallery/1.jpg",
-                                    alt: 'Партнёр фестиваля ООО НПО "Мир"',
-                                },
-                                {
-                                    src: "/gallery/2.jpg",
-                                    alt: 'Партнёр фестиваля ООО НПО "Мир"',
-                                },
-                                {
-                                    src: "/gallery/3.jpg",
-                                    alt: 'Партнёр фестиваля ООО НПО "Мир"',
-                                },
-                                {
-                                    src: "/articles/contest/1.jpg",
-                                    alt: "Фестиваль русской кухни",
-                                },
-                                {
-                                    src: "/articles/contest/2.jpg",
-                                    alt: "Фестиваль русской кухни",
-                                },
-                                {
-                                    src: "/articles/contest/3.jpg",
-                                    alt: "Фестиваль русской кухни",
-                                },
-                                {
-                                    src: "/gallery/7.jpg",
-                                    alt: "Ярмарка",
-                                },
-                                {
-                                    src: "/gallery/8.jpg",
-                                    alt: "Ярмарка",
-                                },
-                                {
-                                    src: "/gallery/9.jpg",
-                                    alt: "Ярмарка",
-                                },
-                                {
-                                    src: "/articles/gastro-mk/7.jpg",
-                                    alt: "Гастрономический мастер-класс «Русский вкус – наше все!»",
-                                },
-                                {
-                                    src: "/articles/gastro-mk/8.jpg",
-                                    alt: "Гастрономический мастер-класс «Русский вкус – наше все!»",
-                                },
-                                {
-                                    src: "/articles/gastro-mk/9.jpg",
-                                    alt: "Гастрономический мастер-класс «Русский вкус – наше все!»",
-                                },
-                            ].map((query, i) => (
-                                <div
-                                    key={i}
-                                    className="group relative aspect-square overflow-hidden rounded-lg bg-muted"
-                                >
-                                    <Img
-                                        src={query.src}
-                                        alt={query.alt}
-                                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-                                    />
-                                </div>
-                            ))}
-                        </div>
+                        {isMobile ? (
+                            <Carousel
+                                opts={{ loop: true }}
+                                className="mt-8 w-full relative"
+                            >
+                                <CarouselContent>
+                                    {gallery.map((el, index) => (
+                                        <CarouselItem key={index}>
+                                            <div className="relative w-full flex h-full justify-center">
+                                                <Img
+                                                    src={el.src}
+                                                    alt={el.alt}
+                                                    className="max-h-[70vh] w-auto object-contain"
+                                                />
+                                            </div>
+                                        </CarouselItem>
+                                    ))}
+                                </CarouselContent>
+                            </Carousel>
+                        ) : (
+                            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                                {gallery.map((query, i) => (
+                                    <div
+                                        key={i}
+                                        className="group relative aspect-square overflow-hidden rounded-lg bg-muted"
+                                    >
+                                        <Img
+                                            src={query.src}
+                                            alt={query.alt}
+                                            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        )}
                     </div>
                 </section>
 
