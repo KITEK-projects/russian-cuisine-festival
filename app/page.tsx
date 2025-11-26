@@ -92,15 +92,15 @@ export default function HomePage() {
             alt: "Смотр-конкурс блюд русской кухни в рамках Всероссийского фестиваля русской кухни",
         },
         {
-            src: "/articles/ocenka-konkursa/1.jpg",
+            src: "/articles/ocenka-konkursa/1.jpeg",
             alt: "Смотр-конкурс блюд русской кухни в рамках Всероссийского фестиваля русской кухни",
         },
         {
-            src: "/articles/ocenka-konkursa/2.jpg",
+            src: "/articles/ocenka-konkursa/2.jpeg",
             alt: "Смотр-конкурс блюд русской кухни в рамках Всероссийского фестиваля русской кухни",
         },
         {
-            src: "/articles/ocenka-konkursa/3.jpg",
+            src: "/articles/ocenka-konkursa/3.jpeg",
             alt: "Смотр-конкурс блюд русской кухни в рамках Всероссийского фестиваля русской кухни",
         },
     ]
