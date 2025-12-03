@@ -5,6 +5,10 @@ article.article > h2 {
     @apply font-serif text-balance text-xl font-bold md:text-2xl lg:text-3xl;
 }
 
+article.article > h3 {
+    @apply font-serif text-xl font-bold md:text-xl lg:text-2xl;
+}
+
 article.article > p {
     text-align: justify;
 }
