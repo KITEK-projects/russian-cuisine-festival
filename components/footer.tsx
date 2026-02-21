@@ -127,7 +127,7 @@ export function Footer() {
 
                 <div className="mt-8 border-t border-border pt-8 text-center text-sm text-muted-foreground">
                     <p>
-                        © 2025 Всероссийский фестиваль русской кухни. Все права
+                        © 2026 Всероссийский фестиваль русской кухни. Все права
                         защищены.
                     </p>
                 </div>
