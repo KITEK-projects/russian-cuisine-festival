@@ -550,6 +550,7 @@ export default function HomePage() {
             </main>
             <DividerPattern />
             <Footer />
+
         </div>
     )
 }
